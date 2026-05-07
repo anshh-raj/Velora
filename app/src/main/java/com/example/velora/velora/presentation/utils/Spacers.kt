@@ -2,6 +2,7 @@ package com.example.velora.velora.presentation.utils
 
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.width
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.ReadOnlyComposable
@@ -9,6 +10,12 @@ import androidx.compose.runtime.compositionLocalOf
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
+
+
+@Composable
+fun HSpacer(width: Dp = MaterialTheme.spacing.s4) {
+    Spacer(modifier = Modifier.width(width))
+}
 
 @Composable
 fun VSpacer(height: Dp = MaterialTheme.spacing.s4){
